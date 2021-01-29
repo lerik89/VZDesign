@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="172px" height="155px" viewBox="0 0 172 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logo</title>
+    <g id="Style-Guide-and-Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4" transform="translate(-630.000000, -38.000000)">
+            <g id="Logo" transform="translate(630.000000, 40.000000)">
+                <text id="Valeria-Zaitseva-Des" font-family="Helvetica" font-size="13" font-weight="normal" letter-spacing="0.9400001" fill="#DD187F">
+                    <tspan x="7.02569221" y="149">Valeria Zaitseva Design</tspan>
+                </text>
+                <path d="M17,-7.10542736e-15 C31.8479851,85.9086684 40.5739561,128.863003 43.1779131,128.863003 C47.0838487,128.863003 58.8031256,28.4325288 64.0657946,28.4325288 C69.3284637,28.4325288 100.996942,28.4325288 106.152928,28.4325288 C111.308914,28.4325288 43.4809083,128.863003 48.1076684,128.863003 C52.7344284,128.863003 107.318723,128.863003 110.505247,128.863003 C113.691772,128.863003 107.318723,28.4325288 110.505247,28.4325288 C113.691772,28.4325288 158.396785,128.863003 154.793505,128.863003 C151.190225,128.863003 120.614416,128.863003 117.961465,128.863003" id="Path" stroke="#DD187F" stroke-width="2.4" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
