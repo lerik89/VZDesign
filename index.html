@@ -3,12 +3,18 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="fefefe">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="fefefe">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Valeria Zaitseva Design</title>
 </head>
 
@@ -19,7 +25,7 @@
     <img src="img/logo.svg" alt="Valeria Zaitseva Design Logo">
     <nav>
       <ul>
-        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="index.html" class="active">Portfolio</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
@@ -29,63 +35,57 @@
 
 <main>
 
-  <div>
-    <div>
+  <div class="section intro">
+    <div class="container">
       <h1>
           Hi, I’m <span>Valeria</span> — a <span>UX/UI Designer</span> based in <span>Berlin</span>.
       </h1>
     </div>
   </div>
-<div>
-  <div>
-  <div><!--open row with (4) columns -->
-    <div><!--open first column for first project -->
-      <picture>
-        <source srcset="img/wooly/woolyCoverM.jpg" media="(max-width:767px)">
-        <source srcset="img/wooly/woolyCoverL.jpg" media="(max-width:1023px)">
-        <img src="img/wooly/woolyCoverXL.jpg" alt="Cover Image Wooly App">
-      </picture>
-      <h4><a href="wooly.html">Wooly</a></h4>
-      <p>
-        <a href="wooly.html">A shopping app for knitters</a>
-      </p>
-    </div><!--end first column-->
-    <div><!--open second column for second project -->
-      <picture>
-        <source srcset="img/babble/babbleCoverM.jpg" media="(max-width:767px)">
-        <source srcset="img/babble/babbleCoverL.jpg" media="(max-width:1023px)">
-        <img src="img/babble/babbleCoverXL.jpg" alt="Cover Image babble. App">
-      </picture>
-      <h4><a href="babble.html">babble.</a></h4>
-      <p>
-        <a href="babble.html">A messenger app for parallel chatting</a>
-      </p>
-    </div><!-- end second column-->
-    <div><!-- open third column for third project-->
-      <picture>
-        <source srcset="img/scribble/scribbleCoverM.jpg" media="(max-width:767px)">
-        <source srcset="img/scribble/scribbleCoverL.jpg" media="(max-width:1023px)">
-        <img src="img/scribble/scribbleCoverXL.jpg" alt="Cover Image Scribble App">
-      </picture>
-      <h4><a href="scribble.html">Scribble</a></h4>
-      <p>
-        <a href="scribble.html">A minimalistic note-taking app</a>
-      </p>
-    </div><!-- close third column for thrid project-->
-    <div><!--open fourth column for fourth project-->
-      <picture>
-        <source srcset="img/wasteless/WasteLessCoverM.jpg" media="(max-width:767px)">
-        <source srcset="img/wasteless/WasteLessCoverL.jpg" media="(max-width:1023px)">
-        <img src="img/wasteless/WasteLessCoverXL.jpg" alt="Cover Image Waste-Less App">
-      </picture>
-      <h4><a href="wasteless.html">Waste-Less</a></h4>
-      <p>
-        <a href="wasteless.html">An ingredients-based recipe app</a>
-      </p>
-    </div><!-- close fourth column for fourth project-->
-  </div><!-- end row-->
-</div>
-</div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row"><!--open row with (4) columns -->
+        <div class="column"><!--open first column for first project -->
+          <a href="wooly.html"><picture>
+            <source srcset="img/wooly/woolyCoverM.jpg" media="(max-width:767px)">
+            <source srcset="img/wooly/woolyCoverL.jpg" media="(max-width:1023px)">
+            <img src="img/wooly/woolyCoverXL.jpg" alt="Cover Image Wooly App">
+          </picture></a>
+          <h2><a href="wooly.html">Wooly</a></h2>
+          <p><a href="wooly.html">A shopping app for knitters</a></p>
+        </div><!--end first column-->
+        <div class="column"><!--open second column for second project -->
+          <picture>
+            <source srcset="img/babble/babbleCoverM.jpg" media="(max-width:767px)">
+            <source srcset="img/babble/babbleCoverL.jpg" media="(max-width:1023px)">
+            <img src="img/babble/babbleCoverXL.jpg" alt="Cover Image babble. App">
+          </picture>
+          <h2><a href="babble.html">babble.</a></h2>
+          <p><a href="babble.html">A messenger app for parallel chatting</a></p>
+        </div><!-- end second column-->
+        <div class="column"><!-- open third column for third project-->
+          <picture>
+            <source srcset="img/scribble/scribbleCoverM.jpg" media="(max-width:767px)">
+            <source srcset="img/scribble/scribbleCoverL.jpg" media="(max-width:1023px)">
+            <img src="img/scribble/scribbleCoverXL.jpg" alt="Cover Image Scribble App">
+          </picture>
+          <h2><a href="scribble.html">Scribble</a></h2>
+          <p><a href="scribble.html">A minimalistic note-taking app</a></p>
+        </div><!-- close third column for thrid project-->
+        <div class="column"><!--open fourth column for fourth project-->
+          <picture>
+            <source srcset="img/wasteless/WasteLessCoverM.jpg" media="(max-width:767px)">
+            <source srcset="img/wasteless/WasteLessCoverL.jpg" media="(max-width:1023px)">
+            <img src="img/wasteless/WasteLessCoverXL.jpg" alt="Cover Image Waste-Less App">
+          </picture>
+          <h2><a href="wasteless.html">Waste-Less</a></h2>
+          <p><a href="wasteless.html">An ingredients-based recipe app</a></p>
+        </div><!-- close fourth column for fourth project-->
+      </div><!-- end row-->
+    </div>
+  </div>
+  
 </main>
 
 <footer id="contact">
