@@ -6,6 +6,10 @@ Accent Color 2 (Bondi Blue): #0690A9
 Body Copy Color (Crystal Teal): #006883
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fefefe;
   font-family: 'Nunito', sans-serif;
@@ -14,6 +18,18 @@ body {
   line-height: 1.4em;
   letter-spacing: 0.08em;
   color: #006883;
+}
+
+main {
+  padding-top: 233px;
+}
+
+header {
+text-align: center;
+padding: 10px 0;
+position: fixed;
+background-color: #fefefe;
+width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -41,6 +57,14 @@ h3{
 h4 {
 font-size: 1em;
 font-weight: 600;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+span {
+  font-weight: 800;
 }
 
 img{
@@ -72,13 +96,29 @@ picture {
 }
 
 nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 10px;
   font-weight: 600;
   font-size: 1.125em;
   line-height: 1.3em;
 }
 
-.container {
-  padding: 0 1em;
+.logo {
+  width: 172px;
+  height: 152px;
 }
 
 .active {
@@ -156,6 +196,12 @@ nav {
    color: #DD187F;
 }
 
+#hero {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+}
+
 #subtitle {
   background-color: #fefefe;
   font-family: 'Nunito', sans-serif;
@@ -166,9 +212,6 @@ nav {
   color: #006883;
 }
 
-
-
-
 #contact h2{
   font-family: 'Raleway', sans-serif;
   color: #DD187F;
@@ -176,4 +219,14 @@ nav {
   letter-spacing: 2.5px;
   font-size: 1.27em;
   font-weight: 800;
+}
+
+/* layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
 }
