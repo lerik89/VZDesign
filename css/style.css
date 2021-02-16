@@ -181,6 +181,7 @@ nav > ul > li > a {
   padding: 12px 8px;
   border-radius: 2px;
   border: 2px solid #DD187F;
+  transition: 0.2s color ease-in-out;
 }
 
 .button1:hover,
@@ -217,6 +218,7 @@ nav > ul > li > a {
   border: none;
   font-weight: 700;
   letter-spacing: 1.16px;
+  padding: 12px 0px;
 }
 
 .button2:hover,
@@ -234,12 +236,10 @@ nav > ul > li > a {
 
 [class*="left col-"] {
   float: left;
-  padding: 0 15px;
 }
 
 [class*="right col-"] {
   float: right;
-  padding: 0 15px;
 }
 
 #hero {
@@ -289,6 +289,36 @@ nav > ul > li > a {
   width: 50px;
 }
 
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0, 50px);}
+  to {transform: translate(200px, 50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px, 48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
 @media only screen and (min-width: 640px) {
 
   main {
@@ -313,6 +343,14 @@ nav > ul > li > a {
 
   .col-md-5 {
     width: 41.7%;
+  }
+
+  [class*="left col-"] {
+    padding-right: 15px;
+  }
+
+  [class*="right col-"] {
+    padding-left: 15px;
   }
 
   .button-networks {
@@ -364,8 +402,16 @@ nav > ul > li > a {
     max-width: 172px;
   }
 
-  .col-lg-6 {
-    width: 50%
+  .col-lg-6-left {
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+  }
+
+  .col-lg-6-right {
+    width: 50%;
+    float: right;
+    padding-left: 15px;
   }
 
   .col-lg-5 {
