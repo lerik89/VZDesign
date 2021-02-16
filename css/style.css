@@ -20,16 +20,24 @@ body {
   color: #006883;
 }
 
-main {
-  padding-top: 233px;
-}
-
 header {
 text-align: center;
-padding: 10px 0;
+padding: 10px 0 0 0;
 position: fixed;
 background-color: #fefefe;
 width: 100%;
+}
+
+main {
+  padding-top: 190px;
+}
+
+footer {
+  background-color: #fefefe;
+  text-align: center;
+  font-size: 0.8125em;
+  font-weight: 300;
+  font-family: 'Nunito', sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -59,10 +67,6 @@ font-size: 1em;
 font-weight: 600;
 }
 
-#hero h1 {
-  text-align: center;
-}
-
 span {
   font-weight: 800;
 }
@@ -74,6 +78,7 @@ img{
 a {
   color: #0690A9;
   text-decoration: none;
+  font-family: 'Raleway', sans-serif;
 }
 
 a:visited {
@@ -116,9 +121,43 @@ nav > ul > li > a {
   line-height: 1.3em;
 }
 
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-s-10 {
+  width: 83%;
+}
+
+.social > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social > ul > li {
+  display: inline-block;
+}
+
+.social > ul > li > a{
+  padding: 0 1.3em;
+}
+
 .logo {
-  width: 172px;
-  height: 152px;
+  max-width: 120px;
+}
+
+.icon {
+  max-width: 35px;
 }
 
 .active {
@@ -178,28 +217,36 @@ nav > ul > li > a {
   border: none;
   font-weight: 700;
   letter-spacing: 1.16px;
-  padding: 12px 8px;
 }
 
 .button2:hover,
-.button2:focus
- {
+.button2:focus {
   opacity: 0.7;
   background-color: #fefefe;
   color: #DD187F;
 }
 
-.button2:active,
- {
+.button2:active {
    opacity: 1;
    background-color: #fefefe;
    color: #DD187F;
 }
 
+[class*="left col-"] {
+  float: left;
+  padding: 0 15px;
+}
+
+[class*="right col-"] {
+  float: right;
+  padding: 0 15px;
+}
+
 #hero {
   display: inline-block;
   width: 100%;
-  padding: 10px 0;
+  padding: 0 0 10 0;
+  text-align: center;
 }
 
 #subtitle {
@@ -212,7 +259,7 @@ nav > ul > li > a {
   color: #006883;
 }
 
-#contact h2{
+#contact h2 {
   font-family: 'Raleway', sans-serif;
   color: #DD187F;
   line-height: 1.2;
@@ -221,12 +268,133 @@ nav > ul > li > a {
   font-weight: 800;
 }
 
-/* layout styling */
-
-.container {
-  padding: 0 15px;
+#contact a {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
 }
 
-.row {
-  margin: 25px 0;
+#photoValeria {
+  max-width: 233px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about h4 {
+  margin-bottom: 0;
+}
+
+#buttondeco {
+  width: 50px;
+}
+
+@media only screen and (min-width: 640px) {
+
+  main {
+    padding-top: 227px;
+  }
+
+  .logo {
+    max-width: 172px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .col-md-7 {
+    width: 58%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-5 {
+    width: 41.7%;
+  }
+
+  .button-networks {
+    max-width: 150px;
+    white-space: normal;
+  }
+
+  .button-behance{
+    white-space: normal;
+    max-width: 272px;
+  }
+
+  .button-invision {
+    white-space: normal;
+    max-width: 316px;
+  }
+
+  #photoValeria {
+    max-width: 439px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  body {
+    font-size: 22px;
+  }
+
+  header {
+    text-align: unset;
+    padding: 20px 0;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    padding-top: 100px;
+  }
+
+  nav > ul > li > a {
+    padding: 0 35px;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.3em;
+  }
+
+  .logo {
+    max-width: 172px;
+  }
+
+  .col-lg-6 {
+    width: 50%
+  }
+
+  .col-lg-5 {
+    width: 41.7%
+  }
+
+  #photoValeria {
+    float: left;
+    padding-right: 30px
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+  body {
+    font-size: 28px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    padding-top: 80px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+
 }
