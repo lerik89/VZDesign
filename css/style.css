@@ -23,9 +23,9 @@ body {
 header {
 text-align: center;
 padding: 10px 0 0 0;
-position: fixed;
 background-color: #fefefe;
 width: 100%;
+position: absolute;
 }
 
 main {
@@ -38,6 +38,7 @@ footer {
   font-size: 0.8125em;
   font-weight: 300;
   font-family: 'Nunito', sans-serif;
+  margin-top: 30px;
 }
 
 h1, h2, h3, h4 {
@@ -73,6 +74,27 @@ span {
 
 img{
   width: 100%;
+}
+
+.image img{
+  border-radius: 5px;
+}
+
+.picture img {
+  border-radius: 5px;
+}
+
+a.image img {
+  border: 2px solid #fefefe;
+}
+
+a.image:hover img {
+  border: 2px solid #DD187F;
+  opacity: 0.7;
+}
+
+a.image:active img{
+  border: 2px solid #DD187F;
 }
 
 a {
@@ -115,10 +137,11 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 10px;
+  padding: 0 2px;
   font-weight: 600;
   font-size: 1.125em;
   line-height: 1.3em;
+  margin: 0 8px;
 }
 
 .container {
@@ -164,13 +187,8 @@ nav > ul > li > a {
   border-bottom: 1px solid #DD187F;
 }
 
-.image:hover,
-.image:focus {
-  outline: 2px solid #DD187F;
-}
-
-.image:active {
-  outline: 2px solid #DD187F;
+.list > ul {
+  list-style-type: circle;
 }
 
 .button1 {
@@ -181,7 +199,6 @@ nav > ul > li > a {
   padding: 12px 8px;
   border-radius: 2px;
   border: 2px solid #DD187F;
-  transition: 0.2s color ease-in-out;
 }
 
 .button1:hover,
@@ -208,7 +225,7 @@ nav > ul > li > a {
 }
 
 .button-invision {
-  max-width: 245px;
+  max-width: 230px;
   white-space: normal;
 }
 
@@ -242,10 +259,23 @@ nav > ul > li > a {
   float: right;
 }
 
+.col-lg-6-right,
+.col-lg-6-left {
+  margin-bottom: 2em;
+}
+
+.col-lg-6-right > p, h2 {
+  margin: .5em 0 0 0;
+}
+
+.col-lg-6-left > p, h2 {
+  margin: .5em 0 0 0;
+}
+
 #hero {
   display: inline-block;
   width: 100%;
-  padding: 0 0 10 0;
+  padding: 0 0 10px 0;
   text-align: center;
 }
 
@@ -274,11 +304,18 @@ nav > ul > li > a {
   font-family: 'Raleway', sans-serif;
 }
 
-#photoValeria {
+.photoV {
   max-width: 233px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
+}
+
+.aboutlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #about h4 {
@@ -321,12 +358,37 @@ nav > ul > li > a {
 
 @media only screen and (min-width: 640px) {
 
+  header {
+    position: fixed;
+    z-index: 10;
+  }
+
   main {
     padding-top: 227px;
   }
 
+  footer {
+    margin-top: 50px;
+  }
+
+  nav > ul > li > a {
+    margin: 0 50px;
+  }
+
+  .picture img{
+    border-radius: 7px;
+  }
+
+  .image img{
+    border-radius: 7px;
+  }
+
   .logo {
     max-width: 172px;
+  }
+
+  .overlap {
+    margin-top: -100px;
   }
 
   .container {
@@ -360,16 +422,16 @@ nav > ul > li > a {
 
   .button-behance{
     white-space: normal;
-    max-width: 272px;
+    max-width: 240px;
   }
 
   .button-invision {
     white-space: normal;
-    max-width: 316px;
+    max-width: 240px;
   }
 
-  #photoValeria {
-    max-width: 439px;
+  .photoV {
+    max-width: 60%;
   }
 
 }
@@ -382,7 +444,10 @@ nav > ul > li > a {
 
   header {
     text-align: unset;
-    padding: 20px 0;
+  }
+
+  footer {
+    margin-top: 90px;
   }
 
   nav {
@@ -392,10 +457,23 @@ nav > ul > li > a {
   }
 
   nav > ul > li > a {
-    padding: 0 35px;
+    padding: 0 2px;
     font-weight: 600;
     font-size: 1em;
     line-height: 1.3em;
+    margin: 0 0 0 120px;
+  }
+
+  h1 {
+    max-width: 65%;
+  }
+
+  .picture img{
+    border-radius: 10px;
+  }
+
+  .image img{
+    border-radius: 10px;
   }
 
   .logo {
@@ -414,13 +492,27 @@ nav > ul > li > a {
     padding-left: 15px;
   }
 
-  .col-lg-5 {
-    width: 41.7%
+  .col-lg-5{
+    width: 41.7%;
   }
 
-  #photoValeria {
+  .button-behance{
+    white-space: normal;
+    max-width: 300px;
+  }
+
+  .button-invision {
+    white-space: normal;
+    max-width: 316px;
+  }
+
+.photoV {
     float: left;
     padding-right: 30px
+  }
+
+  #hero {
+    text-align: left;
   }
 
 }
@@ -438,9 +530,24 @@ nav > ul > li > a {
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin-left:auto;
     margin-right: auto;
+  }
+
+  .overlap {
+    margin-top: -100px;
+  }
+
+  .button-behance{
+    white-space: normal;
+    max-width: 640px;
+  }
+
+  .button-invision {
+    white-space: normal;
+    max-width: 640px;
+    float:right;
   }
 
 }
