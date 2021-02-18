@@ -358,11 +358,6 @@ nav > ul > li > a {
 
 @media only screen and (min-width: 640px) {
 
-  header {
-    position: fixed;
-    z-index: 10;
-  }
-
   main {
     padding-top: 227px;
   }
