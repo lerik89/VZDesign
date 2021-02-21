@@ -22,7 +22,7 @@ body {
 
 header {
 text-align: center;
-padding: 10px 0 0 0;
+padding: 10px 0 30px 0;
 background-color: #fefefe;
 width: 100%;
 position: absolute;
@@ -50,6 +50,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size:1.56em;
   font-weight: 300;
+  margin: 1em 0;
 }
 
 h2 {
@@ -76,24 +77,27 @@ img{
   width: 100%;
 }
 
-.image img{
+.image img,
+.picture img,
+.image svg,
+.picture svg {
   border-radius: 5px;
 }
 
-.picture img {
-  border-radius: 5px;
-}
 
-a.image img {
+a.image img,
+a.image svg {
   border: 2px solid #fefefe;
 }
 
-a.image:hover img {
+a.image:hover img,
+a.image:hover svg {
   border: 2px solid #DD187F;
   opacity: 0.7;
 }
 
-a.image:active img{
+a.image:active img,
+a.image:active svg {
   border: 2px solid #DD187F;
 }
 
@@ -137,7 +141,7 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 2px;
+  padding: 0 2px 10px;
   font-weight: 600;
   font-size: 1.125em;
   line-height: 1.3em;
@@ -161,6 +165,8 @@ nav > ul > li > a {
 .col-s-10 {
   width: 83%;
 }
+
+
 
 .social > ul {
   list-style-type: none;
@@ -257,6 +263,10 @@ nav > ul > li > a {
 
 [class*="right col-"] {
   float: right;
+}
+
+.right.nofloat {
+  float: none;
 }
 
 .col-lg-6-right,
@@ -359,7 +369,7 @@ nav > ul > li > a {
 @media only screen and (min-width: 640px) {
 
   main {
-    padding-top: 227px;
+    padding-top: 258px;
   }
 
   footer {
@@ -370,11 +380,10 @@ nav > ul > li > a {
     margin: 0 50px;
   }
 
-  .picture img{
-    border-radius: 7px;
-  }
-
-  .image img{
+  .image img,
+  .image svg,
+  .picture img,
+  .picture svg {
     border-radius: 7px;
   }
 
@@ -402,12 +411,28 @@ nav > ul > li > a {
     width: 41.7%;
   }
 
+  .topright {
+    margin-left: -15px;
+  }
+
+  .bottomleft {
+   margin-right: -15px;
+  }
+
+  .projectp {
+    margin: 0;
+  }
+
   [class*="left col-"] {
     padding-right: 15px;
   }
 
   [class*="right col-"] {
     padding-left: 15px;
+  }
+
+  .right.nofloat {
+    float: right;
   }
 
   .button-networks {
@@ -448,28 +473,25 @@ nav > ul > li > a {
   nav {
     width: auto;
     float: right;
-    padding-top: 100px;
+    padding-top: 90px;
   }
 
   nav > ul > li > a {
-    padding: 0 2px;
+    padding: 0 2px 10px;
     font-weight: 600;
     font-size: 1em;
     line-height: 1.3em;
     margin: 0 0 0 120px;
   }
 
-  h1 {
-    max-width: 65%;
-  }
 
-  .picture img{
+  .image img,
+  .image svg,
+  .picture img,
+  .picture svg {
     border-radius: 10px;
   }
 
-  .image img{
-    border-radius: 10px;
-  }
 
   .logo {
     max-width: 172px;
@@ -489,6 +511,17 @@ nav > ul > li > a {
 
   .col-lg-5{
     width: 41.7%;
+  }
+
+  .topright {
+    padding-left: 0px;
+    margin: 0;
+  }
+
+  .bottomleft {
+    padding-right: 0px;
+    margin: 0;
+    position: relative;
   }
 
   .button-behance{
