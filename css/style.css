@@ -62,6 +62,8 @@ h2 {
 h3{
   font-size: 1.14em;
   font-weight: 800;
+  text-align: center;
+  margin: 2em 0;
 }
 
 h4 {
@@ -166,8 +168,6 @@ nav > ul > li > a {
   width: 83%;
 }
 
-
-
 .social > ul {
   list-style-type: none;
   padding: 0;
@@ -200,9 +200,11 @@ nav > ul > li > a {
 .button1 {
   display: inline-block;
   background-color: #fefefe;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.16px;
   padding: 12px 8px;
+  margin: 5px 0;
   border-radius: 2px;
   border: 2px solid #DD187F;
 }
@@ -239,9 +241,11 @@ nav > ul > li > a {
   display: inline-block;
   background-color: #fefefe;
   border: none;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.16px;
   padding: 12px 0px;
+  margin: 5px 0;
 }
 
 .button2:hover,
@@ -271,7 +275,7 @@ nav > ul > li > a {
 
 .col-lg-6-right,
 .col-lg-6-left {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .col-lg-6-right > p, h2 {
@@ -282,10 +286,27 @@ nav > ul > li > a {
   margin: .5em 0 0 0;
 }
 
+.photoV {
+  max-width: 233px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 50%;
+}
+
+.aboutlinks {
+  display: inline-block;
+}
+
+.aboutlinks-lg{
+  display: none;
+}
+
 #hero {
   display: inline-block;
   width: 100%;
-  padding: 0 0 10px 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -314,19 +335,7 @@ nav > ul > li > a {
   font-family: 'Raleway', sans-serif;
 }
 
-.photoV {
-  max-width: 233px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-}
 
-.aboutlinks {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 #about h4 {
   margin-bottom: 0;
@@ -380,6 +389,10 @@ nav > ul > li > a {
     margin: 0 50px;
   }
 
+  .break {
+    display: none;
+  }
+
   .image img,
   .image svg,
   .picture img,
@@ -409,6 +422,11 @@ nav > ul > li > a {
 
   .col-md-5 {
     width: 41.7%;
+  }
+
+  .col-lg-6-right,
+  .col-lg-6-left {
+    margin-bottom: 2em;
   }
 
   .topright {
@@ -448,6 +466,12 @@ nav > ul > li > a {
   .button-invision {
     white-space: normal;
     max-width: 240px;
+  }
+
+  .aboutlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .photoV {
@@ -509,8 +533,9 @@ nav > ul > li > a {
     padding-left: 15px;
   }
 
-  .col-lg-5{
+  .col-lg-5-left{
     width: 41.7%;
+    float: left;
   }
 
   .topright {
@@ -534,9 +559,27 @@ nav > ul > li > a {
     max-width: 316px;
   }
 
-.photoV {
-    float: left;
-    padding-right: 30px
+  .button-networks {
+    max-width: 200px;
+    white-space: normal;
+  }
+
+  .aboutlinks {
+    display: none;
+  }
+
+  .aboutlinks-lg {
+display: block;
+margin-top: -400px;
+  }
+
+  .aboutlinks-networks{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photoV {
+    max-width: 100%;
   }
 
   #hero {
