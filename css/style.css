@@ -5,7 +5,6 @@ Accent Color 1 (Magenta Pink): #DD187F;
 Accent Color 2 (Bondi Blue): #0690A9
 Body Copy Color (Crystal Teal): #006883
 */
-
 * {
   box-sizing: border-box;
 }
@@ -21,10 +20,10 @@ body {
 }
 
 header {
-padding: 10px 0 0;
-background-color: #fefefe;
-width: 100%;
-position: absolute;
+  padding: 10px 0 0;
+  background-color: #fefefe;
+  width: 100%;
+  position: absolute;
 }
 
 main {
@@ -40,14 +39,18 @@ footer {
   margin-top: 30px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Raleway', sans-serif;
-  color: #DD187F;
+  color: #dd187f;
   line-height: 1.4em;
   letter-spacing: 0.08em;
 }
+
 h1 {
-  font-size:1.56em;
+  font-size: 1.56em;
   font-weight: 300;
   margin: 1em 0;
 }
@@ -55,10 +58,10 @@ h1 {
 h2 {
   font-size: 1.25em;
   font-weight: 600;
-  color: #0690A9;
+  color: #0690a9;
 }
 
-h3{
+h3 {
   font-size: 1.14em;
   font-weight: 800;
   text-align: center;
@@ -66,15 +69,15 @@ h3{
 }
 
 h4 {
-font-size: 1em;
-font-weight: 600;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 span {
   font-weight: 800;
 }
 
-img{
+img {
   width: 100%;
 }
 
@@ -85,7 +88,6 @@ img{
   border-radius: 5px;
 }
 
-
 a.image img,
 a.image svg {
   border: 2px solid #fefefe;
@@ -93,33 +95,33 @@ a.image svg {
 
 a.image:hover img,
 a.image:hover svg {
-  border: 2px solid #DD187F;
+  border: 2px solid #dd187f;
   opacity: 0.7;
 }
 
 a.image:active img,
 a.image:active svg {
-  border: 2px solid #DD187F;
+  border: 2px solid #dd187f;
 }
 
 a {
-  color: #0690A9;
+  color: #0690a9;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
 
 a:visited {
-  color: #0690A9;
+  color: #0690a9;
 }
 
 a:hover,
 a:focus {
   opacity: 0.7;
-  color: #DD187F;
+  color: #dd187f;
 }
 
-a:active{
-  color: #DD187F;
+a:active {
+  color: #dd187f;
 }
 
 picture {
@@ -139,6 +141,16 @@ nav > ul > li > a {
   font-size: 1.125em;
   line-height: 1.3em;
   margin: 0 8px;
+}
+
+.subtitle {
+  background-color: #fefefe;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 2.02px;
+  color: #006883;
 }
 
 .navtoggle li:not(:last-child) {
@@ -168,7 +180,7 @@ nav > ul > li > a {
   margin: 0;
 }
 
-.navtoggle.responsive nav{
+.navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
@@ -199,7 +211,7 @@ nav > ul > li > a {
   display: inline-block;
 }
 
-.social > ul > li > a{
+.social > ul > li > a {
   padding: 0 1.3em;
 }
 
@@ -212,7 +224,7 @@ nav > ul > li > a {
 }
 
 .active {
-  border-bottom: 1px solid #DD187F;
+  border-bottom: 1px solid #dd187f;
 }
 
 .list > ul {
@@ -228,23 +240,23 @@ nav > ul > li > a {
   padding: 12px 8px;
   margin: 5px 0;
   border-radius: 2px;
-  border: 2px solid #DD187F;
+  border: 2px solid #dd187f;
 }
 
 .button1:hover,
 .button1:focus {
   opacity: 0.7;
-  background-color: #DD187F;
+  background-color: #dd187f;
   color: #fefefe;
 }
 
 .button1:active {
   opacity: 1;
-  background-color: #DD187F;
+  background-color: #dd187f;
   color: #fefefe;
 }
 
-.button-networks{
+.button-networks {
   max-width: 233px;
   white-space: normal;
 }
@@ -266,7 +278,7 @@ nav > ul > li > a {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.16px;
-  padding: 12px 0px;
+  padding: 12px 0;
   margin: 5px 0;
 }
 
@@ -274,13 +286,13 @@ nav > ul > li > a {
 .button2:focus {
   opacity: 0.7;
   background-color: #fefefe;
-  color: #DD187F;
+  color: #dd187f;
 }
 
 .button2:active {
-   opacity: 1;
-   background-color: #fefefe;
-   color: #DD187F;
+  opacity: 1;
+  background-color: #fefefe;
+  color: #dd187f;
 }
 
 [class*="left col-"] {
@@ -300,12 +312,14 @@ nav > ul > li > a {
   margin-bottom: 1em;
 }
 
-.col-lg-6-right > p, h2 {
-  margin: .5em 0 0 0;
+.col-lg-6-right > p,
+h2 {
+  margin: 0.5em 0 0;
 }
 
-.col-lg-6-left > p, h2 {
-  margin: .5em 0 0 0;
+.col-lg-6-left > p,
+h2 {
+  margin: 0.5em 0 0;
 }
 
 .photoV {
@@ -321,8 +335,12 @@ nav > ul > li > a {
   display: inline-block;
 }
 
-.aboutlinks-lg{
+.aboutlinks-lg {
   display: none;
+}
+
+.buttondeco {
+  width: 50px;
 }
 
 #hero {
@@ -332,19 +350,9 @@ nav > ul > li > a {
   text-align: center;
 }
 
-#subtitle {
-  background-color: #fefefe;
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.9em;
-  font-weight: 300;
-  line-height: 1.2;
-  letter-spacing: 2.02px;
-  color: #006883;
-}
-
 #contact h2 {
   font-family: 'Raleway', sans-serif;
-  color: #DD187F;
+  color: #dd187f;
   line-height: 1.2;
   letter-spacing: 2.5px;
   font-size: 1.27em;
@@ -357,21 +365,22 @@ nav > ul > li > a {
   font-family: 'Raleway', sans-serif;
 }
 
-
-
 #about h4 {
   margin-bottom: 0;
 }
 
-#buttondeco {
-  width: 50px;
-}
-
-
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -379,13 +388,23 @@ nav > ul > li > a {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0, 50px);}
-  to {transform: translate(200px, 50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px, 48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-front {
@@ -396,9 +415,7 @@ nav > ul > li > a {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-
 @media only screen and (min-width: 640px) {
-
   header {
     text-align: center;
   }
@@ -473,7 +490,7 @@ nav > ul > li > a {
   }
 
   .bottomleft {
-   margin-right: -15px;
+    margin-right: -15px;
   }
 
   .projectp {
@@ -497,7 +514,7 @@ nav > ul > li > a {
     white-space: normal;
   }
 
-  .button-behance{
+  .button-behance {
     white-space: normal;
     max-width: 240px;
   }
@@ -516,11 +533,9 @@ nav > ul > li > a {
   .photoV {
     max-width: 60%;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
-
   body {
     font-size: 22px;
   }
@@ -551,14 +566,12 @@ nav > ul > li > a {
     margin: 0 0 0 120px;
   }
 
-
   .image img,
   .image svg,
   .picture img,
   .picture svg {
     border-radius: 10px;
   }
-
 
   .logo {
     max-width: 172px;
@@ -576,23 +589,28 @@ nav > ul > li > a {
     padding-left: 15px;
   }
 
-  .col-lg-5-left{
+  .col-lg-5-left {
     width: 41.7%;
     float: left;
   }
 
+  .col-lg-5-right {
+    width: 41.7%;
+    float: right;
+  }
+
   .topright {
-    padding-left: 0px;
+    padding-left: 0;
     margin: 0;
   }
 
   .bottomleft {
-    padding-right: 0px;
+    padding-right: 0;
     margin: 0;
     position: relative;
   }
 
-  .button-behance{
+  .button-behance {
     white-space: normal;
     max-width: 300px;
   }
@@ -612,10 +630,10 @@ nav > ul > li > a {
   }
 
   .aboutlinks-lg {
-display: block;
+    display: block;
   }
 
-  .aboutlinks-networks{
+  .aboutlinks-networks {
     display: flex;
     justify-content: space-between;
   }
@@ -627,11 +645,9 @@ display: block;
   #hero {
     text-align: left;
   }
-
 }
 
 @media only screen and (min-width: 1440px) {
-
   body {
     font-size: 28px;
   }
@@ -644,7 +660,7 @@ display: block;
 
   .container {
     max-width: 1300px;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
   }
 
@@ -652,7 +668,7 @@ display: block;
     margin-top: -100px;
   }
 
-  .button-behance{
+  .button-behance {
     white-space: normal;
     max-width: 640px;
   }
@@ -660,7 +676,5 @@ display: block;
   .button-invision {
     white-space: normal;
     max-width: 640px;
-    float:right;
   }
-
 }
