@@ -129,13 +129,13 @@ picture {
   line-height: 0;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin-bottom: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 2px 3.5px;
   font-weight: 600;
   font-size: 1.125em;
@@ -202,16 +202,16 @@ nav > ul > li > a {
   width: 83%;
 }
 
-.social > ul {
+.social>ul {
   list-style-type: none;
   padding: 0;
 }
 
-.social > ul > li {
+.social>ul>li {
   display: inline-block;
 }
 
-.social > ul > li > a {
+.social>ul>li>a {
   padding: 0 1.3em;
 }
 
@@ -227,7 +227,7 @@ nav > ul > li > a {
   border-bottom: 1px solid #dd187f;
 }
 
-.list > ul {
+.list>ul {
   list-style-type: circle;
 }
 
@@ -262,7 +262,7 @@ nav > ul > li > a {
 }
 
 .button-behance {
-  max-width: 214px;
+  max-width: 230px;
   white-space: normal;
 }
 
@@ -312,12 +312,12 @@ nav > ul > li > a {
   margin-bottom: 1em;
 }
 
-.col-lg-6-right > p,
+.col-lg-6-right>p,
 h2 {
   margin: 0.5em 0 0;
 }
 
-.col-lg-6-left > p,
+.col-lg-6-left>p,
 h2 {
   margin: 0.5em 0 0;
 }
@@ -476,6 +476,16 @@ h2 {
     width: 50%;
   }
 
+  .right-col-md-6 {
+    width: 50%;
+    float: right;
+  }
+
+  .left-col-md-6 {
+    width: 50%;
+    float: left;
+  }
+
   .col-md-5 {
     width: 41.7%;
   }
@@ -558,7 +568,7 @@ h2 {
     padding-top: 90px;
   }
 
-  nav > ul > li > a {
+  nav>ul>li>a {
     padding: 0 2px 10px;
     font-weight: 600;
     font-size: 1em;
@@ -608,16 +618,6 @@ h2 {
     padding-right: 0;
     margin: 0;
     position: relative;
-  }
-
-  .button-behance {
-    white-space: normal;
-    max-width: 300px;
-  }
-
-  .button-invision {
-    white-space: normal;
-    max-width: 316px;
   }
 
   .button-networks {
