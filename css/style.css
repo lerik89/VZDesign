@@ -9,6 +9,10 @@ Body Copy Color (Crystal Teal): #006883
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fefefe;
   font-family: 'Nunito', sans-serif;
